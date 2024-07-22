@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, #fff, #2a5298); /* Fondo de degradado */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px; /* Borde redondeado más grande */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra más grande */
+    overflow: hidden;
+    padding: 2rem;
+    text-align: center; /* Centramos el texto */
+}
+
+/* Imagen de fondo para el contenedor */
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./img/login-bg.jpg') no-repeat center center; /* Imagen de fondo */
+    background-size: cover;
+    z-index: -1; /* Aseguramos que la imagen esté detrás del contenido */
+    opacity: 0.3; /* Hacemos la imagen más tenue */
+}
+
+.form {
+    display: none;
+}
+
+.form.login {
+    display: block; /* Mostrar el formulario de inicio de sesión por defecto */
+}
+
+.form header {
+    font-size: 2.5rem; /* Tamaño de fuente más grande */
+    font-weight: 600; /* Fuente más gruesa */
+    margin-bottom: 1.5rem;
+    color: #161a2d;
+}
+
+.form input {
+    height: 50px; /* Altura más pequeña */
+    width: 100%;
+    padding: 0 15px;
+    font-size: 16px; /* Tamaño de fuente más pequeño */
+    margin-bottom: 1.5rem; /* Margen más grande */
+    border: 2px solid #161a2d; /* Borde más grueso */
+    border-radius: 8px; /* Bordes redondeados más grandes */
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Añadir sombra a los inputs */
+}
+
+.form input:focus {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Cambiar sombra al hacer foco */
+    border-color: #2a5298; /* Cambiar color del borde al hacer foco */
+}
+
+.form .button {
+    background: #2a5298;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+}
+
+.form .button:hover {
+    background: #1e3c72;
+}
+
+.signup {
+    font-size: 16px;
+    color: #161a2d;
+}
+
+.signup a {
+    color: #2a5298;
+    text-decoration: none;
+}
+
+.signup a:hover {
+    text-decoration: underline;
+}
+
+/* Transición entre los formularios */
+#registration-form {
+    display: none; /* Oculta el formulario de registro por defecto */
+}
+
+#show-register:checked ~ .registration {
+    display: block;
+}
+
+#show-login:checked ~ .login {
+    display: block;
+}
+

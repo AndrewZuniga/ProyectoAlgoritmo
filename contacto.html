@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Decisiones Simples y Card Slide</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/contacto.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <img src="./img/logo2.png" alt="logo">
+            <h2>Escolar</h2>
+        </div>
+        <ul class="sidebar-links">
+            <h4><span>Menú</span><div class="menu-separator"></div></h4>
+            <li>
+                <a href="inicio.html">
+                    <i class="fa fa-home"></i>
+                    Inicio
+                </a>
+            </li>
+            <li>
+                <a href="mayor.html">
+                    <i class="fa fa-font"></i> 
+                    Mayor o Menor
+                </a>
+            </li>
+            <li>
+                <a href="secuencia.html">
+                    <i class="fa fa-calculator"></i>
+                    Secuencia
+                </a>
+            </li>
+            <li>
+                <a href="decisiones.html">
+                    <i class="fa fa-paw"></i>
+                     Decisiones
+                    </a>
+                </li>
+            <li> 
+                <a href="#">
+                    <i class="fa fa-envelope"></i>
+                     Contacto
+                    </a>
+                </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-cogs"></i> 
+                    Configuración
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-flag"></i> 
+                    Bandera
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-bell"></i> 
+                    Notificación
+                </a>
+            </li>
+            <h4><span>Cuenta</span><div class="menu-separator"></div></h4>
+            <li><a href="login.html"><i class="fa fa-user-md"></i> Perfil</a></li>
+            <li><a href="#"><i class="fa fa-cogs"></i> Configuración</a></li>
+            <li><a href="#"><i class="fa fa-sign-out"></i> Cerrar sesión</a></li>
+        </ul>
+        <div class="user-account">
+            <div class="user-profile">
+                <img src="./img/user.jpeg" alt="Perfil">
+                <div class="user-details">
+                    <h3>Limones Fc</h3>
+                    <span>Desarrollador Web</span>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <div class="slide-wrapper">
+            <div class="swiper slider-wrapper">
+                <div class="swiper-wrapper card-list">
+                    <div class="swiper-slide card-item">
+                        <img src="./img/presi.jpeg" alt="Imagen de Usuario" class="user-image">
+                        <h2 class="user-name">Andrew Zuñiga</h2>
+                        <p class="user-profession">Ingeniero de Software</p>
+                        <button class="message-button">Contactar</button>
+                    </div>
+                    <div class="swiper-slide card-item">
+                        <img src="./img/Titoo.jpeg" alt="Imagen de Usuario" class="user-image">
+                        <h2 class="user-name">Emmanuel Tito</h2>
+                        <p class="user-profession">Back End Developer</p>
+                        <button class="message-button">Contactar</button>
+                    </div>
+                    <div class="swiper-slide card-item">
+                        <img src="./img/Ian.jpeg" alt="Imagen de Usuario" class="user-image">
+                        <h2 class="user-name">Ian Poveda</h2>
+                        <p class="user-profession">Web developer</p>
+                        <button class="message-button">Contactar</button>
+                    </div>
+                    <div class="swiper-slide card-item">
+                        <img src="./img/Carlitos.jpeg" alt="Imagen de Usuario" class="user-image">
+                        <h2 class="user-name">Victor Castro</h2>
+                        <p class="user-profession">Ingeniero de Software</p>
+                        <button class="message-button">Contactar</button>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/contacto.js"></script>
+</body>
+</html>
